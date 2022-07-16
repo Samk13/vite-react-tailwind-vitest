@@ -12,6 +12,9 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './src/test/setup.js',
-    api: { port: 3002 }
+    api: { port: 3002 },
+    coverage: {
+      reporter: ['text', 'html']
+    }
   }
 })
