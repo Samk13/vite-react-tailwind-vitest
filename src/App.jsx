@@ -8,10 +8,7 @@ function App() {
       <header className="App-header">
         <p>Hello Vite + React!a</p>
         <p>
-          <button
-            type="button"
-            onClick={increment}
-          >
+          <button type="button" onClick={increment}>
             count is: {count}
           </button>
         </p>

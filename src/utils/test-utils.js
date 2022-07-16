@@ -1,17 +1,16 @@
-/* eslint-disable import/export */
 import { cleanup, render } from '@testing-library/react'
 import { afterEach } from 'vitest'
 
 afterEach(() => {
-    cleanup()
+  cleanup()
 })
 
 const customRender = (ui, options = {}) =>
-    render(ui, {
-        // wrap provider(s) here if neededs
-        wrapper: ({ children }) => children,
-        ...options,
-    })
+  render(ui, {
+    // wrap provider(s) here if neededs
+    wrapper: ({ children }) => children,
+    ...options
+  })
 
 export * from '@testing-library/react'
 export { default as userEvent } from '@testing-library/user-event'
